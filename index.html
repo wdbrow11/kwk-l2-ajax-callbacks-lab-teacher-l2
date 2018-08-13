@@ -18,21 +18,30 @@
       }
     </style>
   </head>
+
   <body>
     <main id="main">
+      <form class="search">
+        <input type="text" id="searchTerms">
+        <input type="submit" id="searchRepositories" value="Search Repositories">
+      </form>
+
       <div id="errors"></div>
     </main>
+
     <div class="flexbox-container">
       <div>
         <h3>Repositories</h3>
         <div id="results"></div>
       </div>
+
       <div>
         <h3>Details</h3>
         <div id="details"></div>
       </div>
     </div>
-    <script src="jquery-3.1.0.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
